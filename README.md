@@ -22,6 +22,7 @@
   <img src="https://img.shields.io/badge/css3-1572B6?&style=for-the-badge&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/javascript-F7DF1E?&style=for-the-badge&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/mysql-4479A1?&style=for-the-badge&logo=mysql&logoColor=white" />
+     <img src="https://img.shields.io/badge/node.js-5FA04E?&style=for-the-badge&logo=nodedotjs&logoColor=white" />
 </div>
 
 <br>
@@ -43,10 +44,10 @@
 <br>
 
 <div style="display: flex; gap: 10px; align-items: center;">
-  <img src='/readmeimg/main.png' style="width: 220px; height: 300px;">
-  <img src='/readmeimg/set.png' style="width: 220px; height: 300px;">
-  <img src='/readmeimg/detail.png' style="width: 220px; height: 300px;">
-  <img src='/readmeimg/cart.png' style="width: 220px; height: 300px;">
+  <img src='/readmeimg/main.png' style="width: 200px; height: 300px;">
+  <img src='/readmeimg/set.png' style="width: 200px; height: 300px;">
+  <img src='/readmeimg/detail.png' style="width: 200px; height: 300px;">
+  <img src='/readmeimg/cart.png' style="width: 200px; height: 300px;">
 </div>
 
 <
