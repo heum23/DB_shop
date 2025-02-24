@@ -42,7 +42,7 @@
 <br>
 <br>
 
-<div style="display: flex; gap: 10px; align-items: center;">
+<div style="width:200px; height:400px; display: flex; gap: 10px; align-items: center;">
   <img src='/readmeimg/main.png'>
   <img src='/readmeimg/set.png'>
  <img src='/readmeimg/detail.png'>
