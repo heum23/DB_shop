@@ -12,4 +12,5 @@ router.post("/set/:id", cart_controller.setData);
 router.get("/allId", cart_controller.allId);
 router.post("/cartData", cart_controller.cartData);
 router.delete("/delete/:id", cart_controller.delData);
+router.delete("/delAll", cart_controller.delAll);
 module.exports = router;

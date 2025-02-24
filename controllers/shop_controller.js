@@ -1,15 +1,21 @@
 const shop_modles = require("../models/shop_model");
+const marked = require("marked");
 
 const allItem = async (req, res) => {
   const allItem = await shop_modles.allItem();
+  allItem.forEach((item) => {
+    item.detail = marked.parse(item.detail); // 마크다운을 HTML로 변환
+  });
   res.render("shop/set", { allItem });
 };
+
 const mainDiv = async (req, res) => {
   const mainData = await shop_modles.allItem();
   res.send(mainData);
 };
 // 데이터 처리
 const setData = async (req, res) => {
+  console.log(req.body);
   let data = {
     userId: req.body.userId,
     name: req.body.name,
@@ -24,11 +30,17 @@ const setData = async (req, res) => {
 // 아이디로 찾기
 const getItembyid = async (req, res) => {
   const oneData = await shop_modles.getItembyid(Number(req.params.id));
+  oneData.forEach((item) => {
+    item.detail = marked.parse(item.detail); // 마크다운을 HTML로 변환
+  });
   res.render("shop/write", { oneData });
 };
 //상세페이지 이동
 const detailbyid = async (req, res) => {
   const oneData = await shop_modles.getItembyid(Number(req.params.id));
+  oneData.forEach((item) => {
+    item.detail = marked.parse(item.detail); // 마크다운을 HTML로 변환
+  });
   res.render("shop/detail", { oneData });
 };
 //수정 데이터

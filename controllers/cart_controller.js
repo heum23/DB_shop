@@ -22,4 +22,8 @@ const delData = async (req, res) => {
   await cart_model.delData(req.params.id);
   res.send("200");
 };
-module.exports = { allData, setData, allId, cartData, delData };
+const delAll = async (req, res) => {
+  await cart_model.delAll();
+  res.send("200");
+};
+module.exports = { allData, setData, allId, cartData, delData, delAll };

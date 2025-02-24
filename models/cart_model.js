@@ -44,8 +44,17 @@ const delData = async (id) => {
   const values = [Number(id)];
   try {
     await pool.query(query, values);
+    console.log("삭제성공");
   } catch (e) {
     console.log("삭제실패");
   }
 };
-module.exports = { allId, cartData, itemSet, delData };
+const delAll = async () => {
+  const query = "DELETE FROM cart";
+  try {
+    await pool.query(query);
+  } catch (e) {
+    console.log("삭제 실패");
+  }
+};
+module.exports = { allId, cartData, itemSet, delData, delAll };
