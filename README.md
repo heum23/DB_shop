@@ -42,12 +42,13 @@
 <br>
 <br>
 
-<div style="width:200px; height:400px; display: flex; gap: 10px; align-items: center;">
-  <img src='/readmeimg/main.png'>
-  <img src='/readmeimg/set.png'>
- <img src='/readmeimg/detail.png'>
- <img src='/readmeimg/cart.png'>
+<div style="display: flex; gap: 10px; align-items: center;">
+  <img src='/readmeimg/main.png' style="max-width: 100px; height: auto;">
+  <img src='/readmeimg/set.png' style="max-width: 100px; height: auto;">
+  <img src='/readmeimg/detail.png' style="max-width: 100px; height: auto;">
+  <img src='/readmeimg/cart.png' style="max-width: 100px; height: auto;">
 </div>
+
 
 <br>
 
