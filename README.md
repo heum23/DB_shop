@@ -43,10 +43,10 @@
 <br>
 
 <div style="display: flex; gap: 10px; align-items: center;">
-  <img src='/readmeimg/main.png' style="max-width: 100px; max-height: 100px; height: auto;">
-  <img src='/readmeimg/set.png' style="max-width: 100px; max-height: 100px; height: auto;">
-  <img src='/readmeimg/detail.png' style="max-width: 100px; max-height: 100px; height: auto;">
-  <img src='/readmeimg/cart.png' style="max-width: 100px; max-height: 100px; height: auto;">
+  <img src='/readmeimg/main.png' style="width: 100px; height: 100px;">
+  <img src='/readmeimg/set.png' style="width: 100px; height: 100px;">
+  <img src='/readmeimg/detail.png' style="width: 100px; height: 100px;">
+  <img src='/readmeimg/cart.png' style="width: 100px; height: 100px;">
 </div>
 
 <
