@@ -27,3 +27,6 @@ const updataData = (id) => {
       console.log("error");
     });
 };
+const ready = () => {
+  Swal.fire("준비중입니다!", "", "warning");
+};

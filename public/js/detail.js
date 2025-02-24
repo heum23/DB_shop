@@ -18,3 +18,6 @@ const moveMain = () => {
 const moveCart = () => {
   window.location.href = "/cart/all";
 };
+const ready = () => {
+  Swal.fire("준비중입니다!", "", "warning");
+};

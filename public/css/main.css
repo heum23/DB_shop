@@ -153,3 +153,9 @@ body {
 .pagenumber {
   cursor: pointer;
 }
+.prev {
+  cursor: pointer;
+}
+.next {
+  cursor: pointer;
+}

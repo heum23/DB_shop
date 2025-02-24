@@ -62,5 +62,5 @@ const delAllData = () => {
     });
 };
 const ready = () => {
-  alert("준비중");
+  Swal.fire("준비중입니다!", "", "warning");
 };

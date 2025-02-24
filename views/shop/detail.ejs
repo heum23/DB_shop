@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.css"
+    />
     <link rel="stylesheet" href="/public/css/detail.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link
@@ -16,7 +20,7 @@
       <div class="logo"></div>
       <div class="mainPage" onclick="moveMain()">TimeMirror</div>
       <div class="icon">
-        <div>로그인</div>
+        <div onclick="ready()">로그인</div>
         <div onclick="moveCart()">장바구니</div>
       </div>
     </div>
@@ -41,5 +45,6 @@
       <div class="detail"><%- oneData[0].detail%></div>
     </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
   <script src="/public/js/detail.js"></script>
 </html>

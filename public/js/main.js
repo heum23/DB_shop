@@ -60,14 +60,14 @@ const makeDiv1 = (id) => {
 
 const prevData = () => {
   if (btn === 1) {
-    alert("첫");
+    Swal.fire("첫번째 페이지입니다", "", "warning");
   } else {
     makeDiv1(btn - 1);
   }
 };
 const nextData = () => {
   if (btn === totalPage) {
-    alert("끝");
+    Swal.fire("마지막 페이지입니다", "", "warning");
   } else {
     makeDiv1(btn + 1);
   }
@@ -85,5 +85,5 @@ const moveCart = () => {
 };
 
 const ready = () => {
-  alert("준비중");
+  Swal.fire("준비중입니다!", "", "warning");
 };
