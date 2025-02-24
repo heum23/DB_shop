@@ -43,10 +43,10 @@
 <br>
 
 <div style="display: flex; gap: 10px; align-items: center;">
-  <img src='/readmeimg/main.png' style="width: 200px; height: 500px;">
-  <img src='/readmeimg/set.png' style="width: 200px; height: 500px;">
-  <img src='/readmeimg/detail.png' style="width: 200px; height: 500px;">
-  <img src='/readmeimg/cart.png' style="width: 200px; height: 500px;">
+  <img src='/readmeimg/main.png' style="width: 220px; height: 400px;">
+  <img src='/readmeimg/set.png' style="width: 220px; height: 400px;">
+  <img src='/readmeimg/detail.png' style="width: 220px; height: 400px;">
+  <img src='/readmeimg/cart.png' style="width: 220px; height: 400px;">
 </div>
 
 <
@@ -59,24 +59,23 @@
 
 ### 🧡물품 등록
 
-- 로컬 스토리지에 등록된 아이디와 비교 후 중복 확인
-- 물품이 등록되면 데이터가 로컬 스토리지에 저장
+- 물품이 등록되면 데이터가 DB에 저장
 - 데이터 저장하면 물품등록 테이블 추가 생성
 
 <br>
 
-![Image](https://github.com/user-attachments/assets/3066c005-4a7a-4b1e-a3b8-6c70cd192f4e)
+![Image](https://github.com/user-attachments/assets/2efa6ab5-bde4-414d-a9e0-21dd4a8fcf9d)
 
 <br>
 
 ### 🧡등록 물품 수정 & 삭제
 
 - 등록된 물품의 내옹을 수정하거나 삭제
-- 수정 또는 삭제 시 로컬 스토리지의 데이터도 수정 또는 삭제
+- 수정 또는 삭제 시 DB의 데이터도 수정 또는 삭제
 
 <br>
 
-![Image](https://github.com/user-attachments/assets/2837d2cb-760a-4458-9381-7032e11ddd18)
+![Image](https://github.com/user-attachments/assets/2fc1f87c-f024-46c3-925e-344292bff6e6)
 
 <br>
 
@@ -87,39 +86,39 @@
 
 <br>
 
-![Image](https://github.com/user-attachments/assets/95fd8c6d-43a3-4488-8a64-5d9e9b42d558)
+![Image](https://github.com/user-attachments/assets/2c0594e3-f685-490d-ae5f-c8a62284bb48)
 
 <br>
 
 ### 💙장바구니 담기
 
-- 장바구니 담기 버튼 온클릭 시 로컬스토리지2에 저장
-- 로컬스토리지2에 저장된 후 장바구니 갯수 카운트 업
+- 장바구니 담기 버튼 온클릭 시 2번째 DB에 저장
 
 <br>
 
-![Image](https://github.com/user-attachments/assets/395bcb83-bcbd-4d8d-95ce-12aa9316308e)
+
+![Image](https://github.com/user-attachments/assets/b795811c-9806-48e9-86aa-94b2cbe53343)
 
 <br>
 
 ### 💙장바구니 물품 삭제 & 전체 삭제
 
-- 장바구니 담긴 물품 삭제 또는 전체 삭제 시 로컬 스토리지2의 데이터도 수정
+- 장바구니에 담긴 물품 삭제
+- 2번쨰 DB에서 데이터 삭제
 
 <br>
 
-![Image](https://github.com/user-attachments/assets/0723a7c2-3728-43c4-bdaa-03c4e38a8ad5)
+![Image](https://github.com/user-attachments/assets/bcecf252-0702-48a6-9116-f49f37594b82)
 
 <br>
 
-### 💙장바구니 수량 증가 & 감소
+### 💙에디터 사용
 
-- 장바구니의 담긴 물품의 수량 + - 버튼 온클릭 시 카운트 데이터 +1 또는 -1
-- 중복된 물품 한번 더 담을 시 카운트 업
+- 제품의 상세내용에 이미지들을 삽입하는 방법을 찾아보다 에디터 발견 후 사용
 
 <br>
 
-![Image](https://github.com/user-attachments/assets/f8a68c86-062a-4063-b8cb-16e127bce20e)
+![Image](https://github.com/user-attachments/assets/417bfb5a-009e-4a89-a243-b7077b01a867)
 
 <br>
 
@@ -129,6 +128,6 @@
 
 <br>
 
-![Image](https://github.com/user-attachments/assets/e5b6bff6-c43b-4c73-8f70-4728837067d1)
+![Image](https://github.com/user-attachments/assets/195ff8ef-6c4f-4794-8c2e-daae3827dfdc)
 
 <br>
