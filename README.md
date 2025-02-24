@@ -1,6 +1,4 @@
-
 # DB_Shop
-
 
 <br>
 
@@ -45,12 +43,11 @@
 <br>
 
 <div style="display: flex; gap: 10px; align-items: center;">
-  <img src="https://github.com/user-attachments/assets/5cee100f-f52f-4cdd-8ef6-d09f4e86b7dc" alt="Image" />
-  <img src="https://github.com/user-attachments/assets/029e3791-2584-4931-9050-bb03685c6094" alt="Image" />
-  <img src="https://github.com/user-attachments/assets/85bb4d36-a2ef-4d5b-8cd9-bf7274cefc39" alt="Image" />
-  <img src="https://github.com/user-attachments/assets/a6bf6ffa-42af-4ec0-bf1c-05b7d05f95fc" alt="Image" />
+  <img src='/readmeimg/main.png'>
+  <img src='/readmeimg/set.png'>
+ <img src='/readmeimg/detail.png'>
+ <img src='/readmeimg/cart.png'>
 </div>
-
 
 <br>
 
