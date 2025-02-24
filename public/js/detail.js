@@ -4,7 +4,7 @@ const cartIn = (id) => {
     url: `/cart/set/${id}`,
   })
     .then((res) => {
-      alert("담김");
+      Swal.fire("장바구니에 추가되었습니다!", "", "warning");
       console.log("성공!");
     })
     .catch((e) => {

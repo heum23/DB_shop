@@ -42,9 +42,11 @@ const delData = (id) => {
     url: `/cart/delete/${id}`,
   })
     .then((res) => {
-      alert("삭제 완료");
-      window.location.reload();
+      Swal.fire("삭제되었습니다", "", "success").then(() => {
+        window.location.reload(); //
+      });
     })
+
     .catch((e) => {
       console.log("error", e);
     });
@@ -55,7 +57,9 @@ const delAllData = () => {
     url: "/cart/delAll",
   })
     .then((res) => {
-      window.location.reload();
+      Swal.fire("삭제되었습니다", "", "warning").then(() => {
+        window.location.reload();
+      });
     })
     .catch((e) => {
       console.log(e, "error");
