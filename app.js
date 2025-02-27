@@ -4,7 +4,7 @@ const port = 3000;
 const multer = require("multer");
 const path = require("path");
 const bodyParser = require("body-parser");
-
+const cookieParser = require("cookie-parser");
 const shop_router = require("./routers/shop_router");
 const cart_router = require("./routers/cart_router");
 //이미지 저장
@@ -19,6 +19,7 @@ const storage = multer.diskStorage({
     cb(null, Date.now() + ext); //timestamp + 확장자
   },
 });
+app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
@@ -33,6 +34,7 @@ app.use("/cart", cart_router);
 
 //메인페이지
 app.get("/", (req, res) => {
+  res.cookie("key", "value");
   res.render("main");
 });
 //

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>결제중</div>
+    <a href="/">메인으로 돌아가기</a>
+    <div class="compelet"></div>
+
+    <script src="https://js.tosspayments.com/v1/payment"></script>
+    <script>
+      const div = document.querySelector(".compelet");
+      // 페이지 로드 시 실행
+      document.addEventListener("DOMContentLoaded", async () => {
+        // 현재 URL에서 쿼리 파라미터를 가져옴
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // 각 파라미터 값 추출
+        const orderId = urlParams.get("orderId");
+        const paymentKey = urlParams.get("paymentKey");
+        const amount = urlParams.get("amount");
+
+        // 값이 모두 있는지 확인
+        if (orderId && paymentKey && amount) {
+          try {
+            // API 요청을 위한 URL과 헤더 설정
+            const url = "https://api.tosspayments.com/v1/payments/confirm";
+            const options = {
+              method: "POST",
+              headers: {
+                Authorization:
+                  "Basic dGVzdF9za196WExrS0V5cE5BcldtbzUwblgzbG1lYXhZRzVSOg==", // 실제 API Key로 변경해야 함
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                paymentKey: paymentKey,
+                orderId: orderId,
+                amount: amount,
+              }),
+            };
+
+            // Fetch API를 통해 POST 요청 보내기
+            const response = await fetch(url, options);
+
+            // 응답 처리
+            const data = await response.json();
+            if (response.ok) {
+              console.log("결제 성공:", data);
+              div.innerHTML = `주문명 : ${data.orderName}
+              <br>
+              가격 : ${data.balanceAmount}`;
+            } else {
+              console.log("결제 실패:", data);
+            }
+          } catch (error) {
+            console.error("API 요청 오류:", error);
+          }
+        } else {
+          console.error("쿼리 파라미터가 부족합니다.");
+        }
+      });
+    </script>
+  </body>
+</html>

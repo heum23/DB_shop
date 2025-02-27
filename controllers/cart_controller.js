@@ -26,4 +26,15 @@ const delAll = async (req, res) => {
   await cart_model.delAll();
   res.send("200");
 };
-module.exports = { allData, setData, allId, cartData, delData, delAll };
+const cartpay = (req, res) => {
+  res.render("cart/payments");
+};
+module.exports = {
+  allData,
+  setData,
+  allId,
+  cartData,
+  delData,
+  delAll,
+  cartpay,
+};
