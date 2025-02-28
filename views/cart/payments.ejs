@@ -5,10 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .compelet {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+
+    .compelet div {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    a {
+      display: block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #007bff;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
   <body>
-    <div>결제중</div>
+    <div class="compelet"><div>결제중</div></div>
     <a href="/">메인으로 돌아가기</a>
-    <div class="compelet"></div>
 
     <script src="https://js.tosspayments.com/v1/payment"></script>
     <script>
@@ -49,9 +88,12 @@
             const data = await response.json();
             if (response.ok) {
               console.log("결제 성공:", data);
-              div.innerHTML = `주문명 : ${data.orderName}
+              div.innerHTML = `<div>결제 완료</div>
+              <div>주문명 : ${data.orderName}</div>
               <br>
-              가격 : ${data.balanceAmount}`;
+             <div> 가격 : ${data.balanceAmount.toLocaleString()}원</div>
+             <br>
+             <div>TimeMirror를 이용해주셔서 감사합니다.</div>`;
             } else {
               console.log("결제 실패:", data);
             }
