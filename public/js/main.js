@@ -20,7 +20,7 @@ const mainDiv = () => {
   });
 };
 mainDiv();
-console.log(databox);
+
 const showItem = 10;
 
 const pagenation = document.querySelector(".pagenation");
